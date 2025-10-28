@@ -52,10 +52,6 @@ const Transformations = () => {
     "https://www.instagram.com/p/C4afxa9SLj9/",
     "https://www.instagram.com/p/C4-ibvRSCFn/",
     "https://www.instagram.com/p/C5lLtSESMIy/",
-    "https://www.instagram.com/p/C6YqmPFy_sC/",
-    "https://www.instagram.com/p/C68sARKyYfv/",
-    "https://www.instagram.com/p/C7OtPzCyMc8/",
-    "https://www.instagram.com/p/C8Mjfz_hKGJ/",
   ];
 
   const getColumns = (width: number) => {
