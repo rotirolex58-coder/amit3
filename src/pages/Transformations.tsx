@@ -52,34 +52,30 @@ const Transformations = () => {
     "https://www.instagram.com/p/C4afxa9SLj9/",
     "https://www.instagram.com/p/C4-ibvRSCFn/",
     "https://www.instagram.com/p/C5lLtSESMIy/",
-    <iframe src="https://www.instagram.com/p/C2uUCCWB8yO/embed" frameborder="0" allowfullscreen width="400" height="480"></iframe>							
-<iframe src="https://www.instagram.com/p/C4afxa9SLj9/embed" frameborder="0" allowfullscreen width="400" height="480"></iframe>							
-<iframe src="https://www.instagram.com/p/C4-ibvRSCFn/embed" frameborder="0" allowfullscreen width="400" height="480"></iframe>							
-<iframe src="https://www.instagram.com/p/C5lLtSESMIy/embed" frameborder="0" allowfullscreen width="400" height="480"></iframe>							
-<iframe src="https://www.instagram.com/p/C6YqmPFy_sC/embed" frameborder="0" allowfullscreen width="400" height="480"></iframe>							
-<iframe src="https://www.instagram.com/p/C68sARKyYfv/embed" frameborder="0" allowfullscreen width="400" height="480"></iframe>							
-<iframe src="https://www.instagram.com/p/C7OtPzCyMc8/embed" frameborder="0" allowfullscreen width="400" height="480"></iframe>							
-<iframe src="https://www.instagram.com/p/C8Mjfz_hKGJ/embed" frameborder="0" allowfullscreen width="400" height="480"></iframe>							
-<iframe src="https://www.instagram.com/p/C9UmJv_S-Vj/embed" frameborder="0" allowfullscreen width="400" height="480"></iframe>							
-<iframe src="https://www.instagram.com/p/C9xcw_8ymwY/embed" frameborder="0" allowfullscreen width="400" height="480"></iframe>							
-<iframe src="https://www.instagram.com/p/C-KtXHSSaBB/embed" frameborder="0" allowfullscreen width="400" height="480"></iframe>							
-<iframe src="https://www.instagram.com/p/C_QUQAdSEXG/embed" frameborder="0" allowfullscreen width="400" height="480"></iframe>							
-<iframe src="https://www.instagram.com/p/C_dGLXnyBZz/embed" frameborder="0" allowfullscreen width="400" height="480"></iframe>							
-<iframe src="https://www.instagram.com/p/C_5by_sSJVp/embed" frameborder="0" allowfullscreen width="400" height="480"></iframe>							
-<iframe src="https://www.instagram.com/p/DBvZqwHSF6A/embed" frameborder="0" allowfullscreen width="400" height="480"></iframe>							
-<iframe src="https://www.instagram.com/p/DC_ruQZSB9b/embed" frameborder="0" allowfullscreen width="400" height="480"></iframe>							
-<iframe src="https://www.instagram.com/p/DD9kRbqzVPm/embed" frameborder="0" allowfullscreen width="400" height="480"></iframe>							
-<iframe src="https://www.instagram.com/p/DEZz86BzlEc/embed" frameborder="0" allowfullscreen width="400" height="480"></iframe>							
-<iframe src="https://www.instagram.com/p/DFFkxd8ykgM/embed" frameborder="0" allowfullscreen width="400" height="480"></iframe>							
-<iframe src="https://www.instagram.com/p/DGfrl-Tz0a0/embed" frameborder="0" allowfullscreen width="400" height="480"></iframe>							
-<iframe src="https://www.instagram.com/p/DHa6CbuT3J1/embed" frameborder="0" allowfullscreen width="400" height="480"></iframe>							
-<iframe src="https://www.instagram.com/p/DJEcRBeSQ52/embed" frameborder="0" allowfullscreen width="400" height="480"></iframe>							
-<iframe src="https://www.instagram.com/p/DKCSMuYSsXp/embed" frameborder="0" allowfullscreen width="400" height="480"></iframe>							
-<iframe src="https://www.instagram.com/p/DLZ03ueyTrh/embed" frameborder="0" allowfullscreen width="400" height="480"></iframe>							
-<iframe src="https://www.instagram.com/p/DMfWI50zt3E/embed" frameborder="0" allowfullscreen width="400" height="480"></iframe>							
-<iframe src="https://www.instagram.com/p/DNLHhghyaiF/embed" frameborder="0" allowfullscreen width="400" height="480"></iframe>							
-<iframe src="https://www.instagram.com/p/DN25Gt75nqn/embed" frameborder="0" allowfullscreen width="400" height="480"></iframe>							
-<iframe src="https://www.instagram.com/p/C19ylpbS4Wn/embed" frameborder="0" allowfullscreen width="400" height="480"></iframe>							
+    "https://www.instagram.com/p/C6YqmPFy_sC/",
+    "https://www.instagram.com/p/C68sARKyYfv/",
+    "https://www.instagram.com/p/C7OtPzCyMc8/",
+    "https://www.instagram.com/p/C8Mjfz_hKGJ/",
+    "https://www.instagram.com/p/C9UmJv_S-Vj/",
+    "https://www.instagram.com/p/C9xcw_8ymwY/",
+    "https://www.instagram.com/p/C-KtXHSSaBB/",
+    "https://www.instagram.com/p/C_QUQAdSEXG/",
+    "https://www.instagram.com/p/C_dGLXnyBZz/",
+    "https://www.instagram.com/p/C_5by_sSJVp/",
+    "https://www.instagram.com/p/DBvZqwHSF6A/",
+    "https://www.instagram.com/p/DC_ruQZSB9b/",
+    "https://www.instagram.com/p/DD9kRbqzVPm/",
+    "https://www.instagram.com/p/DEZz86BzlEc/",
+    "https://www.instagram.com/p/DFFkxd8ykgM/",
+    "https://www.instagram.com/p/DGfrl-Tz0a0/",
+    "https://www.instagram.com/p/DHa6CbuT3J1/",
+    "https://www.instagram.com/p/DJEcRBeSQ52/",
+    "https://www.instagram.com/p/DKCSMuYSsXp/",
+    "https://www.instagram.com/p/DLZ03ueyTrh/",
+    "https://www.instagram.com/p/DMfWI50zt3E/",
+    "https://www.instagram.com/p/DNLHhghyaiF/",
+    "https://www.instagram.com/p/DN25Gt75nqn/",
+    "https://www.instagram.com/p/C19ylpbS4Wn/",
   ];
 
   const getColumns = (width: number) => {
