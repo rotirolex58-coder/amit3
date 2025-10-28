@@ -48,7 +48,7 @@ const Transformations = () => {
   const [columns, setColumns] = useState(3);
 
   const instagramPosts = [
-    "https://www.instagram.com/p/C19ylpbS4Wn/",
+    "https://www.instagram.com/p/C2uUCCWB8yO/",
     "https://www.instagram.com/p/C4afxa9SLj9/",
     "https://www.instagram.com/p/C4-ibvRSCFn/",
     "https://www.instagram.com/p/C5lLtSESMIy/",
@@ -70,10 +70,12 @@ const Transformations = () => {
     "https://www.instagram.com/p/DGfrl-Tz0a0/",
     "https://www.instagram.com/p/DHa6CbuT3J1/",
     "https://www.instagram.com/p/DJEcRBeSQ52/",
+    "https://www.instagram.com/p/DKCSMuYSsXp/",
     "https://www.instagram.com/p/DLZ03ueyTrh/",
     "https://www.instagram.com/p/DMfWI50zt3E/",
     "https://www.instagram.com/p/DNLHhghyaiF/",
     "https://www.instagram.com/p/DN25Gt75nqn/",
+    "https://www.instagram.com/p/C19ylpbS4Wn/",
   ];
 
   const getColumns = (width: number) => {
