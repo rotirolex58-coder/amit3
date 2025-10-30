@@ -5,40 +5,25 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { ParticleBackground } from "@/components/ParticleBackground";
 
-declare global {
-  interface Window {
-    instgrm?: {
-      Embeds: {
-        process: () => void;
-      };
-    };
-  }
-}
-
-const InstagramEmbed = ({ url }: { url: string }) => {
-  useEffect(() => {
-    if (window.instgrm?.Embeds) {
-      window.instgrm.Embeds.process();
-    }
-  }, [url]);
-
+const TransformationImage = ({ src, alt }: { src: string; alt: string }) => {
   return (
-    <blockquote
-      className="instagram-media"
-      data-instgrm-permalink={url}
-      data-instgrm-version="14"
-      style={{
-        background: "#FFF",
-        border: 0,
-        borderRadius: "3px",
-        boxShadow: "0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15)",
-        margin: "1px",
-        maxWidth: "540px",
-        minWidth: "326px",
-        padding: 0,
-        width: "100%",
-      }}
-    />
+    <motion.div
+      initial={{ opacity: 0, scale: 0.95 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+      className="glass-intense rounded-2xl overflow-hidden group cursor-pointer"
+    >
+      <div className="relative overflow-hidden">
+        <img
+          src={src}
+          alt={alt}
+          loading="lazy"
+          className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      </div>
+    </motion.div>
   );
 };
 
@@ -47,35 +32,63 @@ const Transformations = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const [columns, setColumns] = useState(3);
 
-  const instagramPosts = [
-    "https://www.instagram.com/p/C2uUCCWB8yO/",
-    "https://www.instagram.com/p/C4afxa9SLj9/",
-    "https://www.instagram.com/p/C4-ibvRSCFn/",
-    "https://www.instagram.com/p/C5lLtSESMIy/",
-    "https://www.instagram.com/p/C6YqmPFy_sC/",
-    "https://www.instagram.com/p/C68sARKyYfv/",
-    "https://www.instagram.com/p/C7OtPzCyMc8/",
-    "https://www.instagram.com/p/C8Mjfz_hKGJ/",
-    "https://www.instagram.com/p/C9UmJv_S-Vj/",
-    "https://www.instagram.com/p/C9xcw_8ymwY/",
-    "https://www.instagram.com/p/C-KtXHSSaBB/",
-    "https://www.instagram.com/p/C_QUQAdSEXG/",
-    "https://www.instagram.com/p/C_dGLXnyBZz/",
-    "https://www.instagram.com/p/C_5by_sSJVp/",
-    "https://www.instagram.com/p/DBvZqwHSF6A/",
-    "https://www.instagram.com/p/DC_ruQZSB9b/",
-    "https://www.instagram.com/p/DD9kRbqzVPm/",
-    "https://www.instagram.com/p/DEZz86BzlEc/",
-    "https://www.instagram.com/p/DFFkxd8ykgM/",
-    "https://www.instagram.com/p/DGfrl-Tz0a0/",
-    "https://www.instagram.com/p/DHa6CbuT3J1/",
-    "https://www.instagram.com/p/DJEcRBeSQ52/",
-    "https://www.instagram.com/p/DKCSMuYSsXp/",
-    "https://www.instagram.com/p/DLZ03ueyTrh/",
-    "https://www.instagram.com/p/DMfWI50zt3E/",
-    "https://www.instagram.com/p/DNLHhghyaiF/",
-    "https://www.instagram.com/p/DN25Gt75nqn/",
-    "https://www.instagram.com/p/C19ylpbS4Wn/",
+  const transformationImages = [
+    {
+      src: "https://ik.imagekit.io/sxktlshdn/SnapInsta.to_503475218_18481511803068461_6957674887002282534_n.jpg?updatedAt=1761803213650",
+      alt: "Transformation Result 1"
+    },
+    {
+      src: "https://ik.imagekit.io/sxktlshdn/SnapInsta.to_503387343_18481511800068461_8518795141208715230_n.jpg?updatedAt=1761803214503",
+      alt: "Transformation Result 2"
+    },
+    {
+      src: "https://ik.imagekit.io/sxktlshdn/SnapInsta.to_503372284_18481511794068461_2347062922455599600_n.jpg?updatedAt=1761803215324",
+      alt: "Transformation Result 3"
+    },
+    {
+      src: "https://ik.imagekit.io/sxktlshdn/SnapInsta.to_503343452_18481511758068461_8183293268416937856_n.jpg?updatedAt=1761803215382",
+      alt: "Transformation Result 4"
+    },
+    {
+      src: "https://ik.imagekit.io/sxktlshdn/SnapInsta.to_503385813_18481511785068461_6793275724048128873_n.jpg?updatedAt=1761803215367",
+      alt: "Transformation Result 5"
+    },
+    {
+      src: "https://ik.imagekit.io/sxktlshdn/SnapInsta.to_503982829_18481511695068461_1725159230096031982_n.jpg?updatedAt=1761803215446",
+      alt: "Transformation Result 6"
+    },
+    {
+      src: "https://ik.imagekit.io/sxktlshdn/SnapInsta.to_503358942_18481511713068461_7776521191716216921_n.jpg?updatedAt=1761803215474",
+      alt: "Transformation Result 7"
+    },
+    {
+      src: "https://ik.imagekit.io/sxktlshdn/SnapInsta.to_503278078_18481511692068461_7523830053483918272_n.jpg?updatedAt=1761803215474",
+      alt: "Transformation Result 8"
+    },
+    {
+      src: "https://ik.imagekit.io/sxktlshdn/SnapInsta.to_503181360_18481511749068461_7341025526988042870_n.jpg?updatedAt=1761803215483",
+      alt: "Transformation Result 9"
+    },
+    {
+      src: "https://ik.imagekit.io/sxktlshdn/SnapInsta.to_503946464_18481511662068461_9123074913033177021_n.jpg?updatedAt=1761803215489",
+      alt: "Transformation Result 10"
+    },
+    {
+      src: "https://ik.imagekit.io/sxktlshdn/SnapInsta.to_503743237_18481511701068461_7059219700768473374_n.jpg?updatedAt=1761803215536",
+      alt: "Transformation Result 11"
+    },
+    {
+      src: "https://ik.imagekit.io/sxktlshdn/SnapInsta.to_503166074_18481511698068461_3097913700248999885_n.jpg?updatedAt=1761803215547",
+      alt: "Transformation Result 12"
+    },
+    {
+      src: "https://ik.imagekit.io/sxktlshdn/SnapInsta.to_503626702_18481511647068461_8278944993284126609_n.jpg?updatedAt=1761803215532",
+      alt: "Transformation Result 13"
+    },
+    {
+      src: "https://ik.imagekit.io/sxktlshdn/SnapInsta.to_503406258_18481511677068461_4759041479797289948_n.jpg?updatedAt=1761803215604",
+      alt: "Transformation Result 14"
+    },
   ];
 
   const getColumns = (width: number) => {
@@ -92,21 +105,6 @@ const Transformations = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "//www.instagram.com/embed.js";
-    script.async = true;
-    document.body.appendChild(script);
-
-    const timer = setTimeout(() => {
-      window.instgrm?.Embeds?.process();
-    }, 100);
-
-    return () => {
-      clearTimeout(timer);
-      document.body.removeChild(script);
-    };
-  }, []);
 
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
@@ -139,8 +137,8 @@ const Transformations = () => {
             </motion.div>
 
             <MasonryGrid columns={columns} gap={4}>
-              {instagramPosts.map((url, index) => (
-                <InstagramEmbed key={index} url={url} />
+              {transformationImages.map((image, index) => (
+                <TransformationImage key={index} src={image.src} alt={image.alt} />
               ))}
             </MasonryGrid>
 
