@@ -100,13 +100,15 @@ export const Hero = () => {
               transition={{ delay: 0.9, duration: 0.8 }}
               className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12"
             >
-              <Button
-                onClick={() => scrollToSection("Ebook")}
-                className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold px-8 py-7 rounded-full text-lg glow-coral transition-all duration-300 hover:scale-105 group"
+              <a
+                href="https://docs.google.com/forms/d/1gEswqUTqwT4Z7v0h486jT7gNwNu1GTIp_6i6bB48jjw/viewform?edit_requested=true"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-10 bg-primary hover:bg-primary/90 text-primary-foreground font-bold px-8 py-7 rounded-full text-lg glow-coral transition-all duration-300 hover:scale-105 group"
               >
                 Get Started
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-              </Button>
+              </a>
               <Button
                 onClick={() => scrollToSection("about")}
                 variant="outline"
